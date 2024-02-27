@@ -1,0 +1,410 @@
+body {
+  background-color: rgba(239, 242, 245, 1);
+}
+
+/*App css*/
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 2%;
+  gap: 10px;
+}
+
+.responsive-container {
+  display: none;
+}
+
+.container1 {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  gap: 25px;
+  padding: 1%;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsive-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container2 {
+    display: none;
+  }
+}
+
+/* Navbar CSS */
+
+.koinx-logo-icon {
+  height: 24px;
+  width: 96px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  cursor: pointer;
+}
+.crypto-taxes,
+.free-tools,
+.resource-center {
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.header-element {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 13px 0 0;
+}
+.label-span {
+  height: 40px;
+  flex: 0.7724;
+}
+.crypto-taxes-parent {
+  width: 554px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 32px;
+  max-width: 100%;
+}
+
+.menu {
+  height: 24px;
+  display: none;
+}
+.navigation-link {
+  align-self: stretch;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(16, 38, 73, 0.06);
+  border-bottom: 1px solid #dedfe2;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 56px 20px 60px;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  max-width: 100%;
+  gap: 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #0f152a;
+  font-family: Inter;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .crypto-taxes-parent {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+/*trending css*/
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 90%;
+  padding: 1% 5%;
+  background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .trending {
+    width: 180%;
+    min-width: 250px;
+    max-width: 780px;
+    margin: 5%;
+  }
+}
+
+.profit {
+  background-color: rgba(235, 249, 244, 1);
+  color: rgba(20, 176, 121, 1);
+  padding: 5px;
+  font-family: Inter;
+  width: 70px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loss {
+  background-color: rgba(238, 104, 85, 0.1);
+  color: rgba(233, 105, 117, 1);
+  padding: 5px;
+
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  border-radius: 5px;
+}
+
+.coins-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.coins-name h3 {
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.trending h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.trending-coins {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*blue container*/
+
+.blue-container {
+  width: 90%;
+  background-color: rgba(0, 82, 254, 1);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Inter;
+  padding: 10px 20px;
+  border-radius: 25px;
+  float: right;
+  margin-right: 2%;
+  align-items: center;
+  text-align: center;
+}
+
+.blue-container img {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.blue-container h2 {
+  font-weight: 600;
+  margin: 5% 7.5%;
+  line-height: 30px;
+}
+
+.blue-container p {
+  line-height: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+/* Coin CSS*/
+
+.coin-container {
+  background-color: white;
+  border-radius: 15px;
+  width: 65%;
+  margin: 1%;
+  padding: 1% 2%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Inter;
+}
+
+.rank {
+  color: white;
+  background-color: gray;
+  padding: 7.5px;
+  border-radius: 5px;
+}
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+  font-family: Inter;
+}
+
+.coin-val {
+  display: flex;
+  gap: 35px;
+  font-family: Inter;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.price-coin {
+  display: flex;
+  flex-direction: column;
+}
+
+.usd,
+.inr {
+  display: flex;
+  align-items: center;
+}
+
+.usd {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.inr {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.coins-price1 {
+  background-color: rgba(235, 249, 244, 1);
+  color: rgba(20, 176, 121, 1);
+  padding: 5px 10px;
+  font-family: Inter;
+  width: 45px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+/* Suggestion  + Trending Coins CSS*/
+
+.trendingcards {
+  background-color: white;
+  padding: 1% 2%;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+}
+
+.trending-cards-container,
+.trending-cards-container1 {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.trending-cards-container::-webkit-scrollbar,
+.trending-cards-container1::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  margin: 0 -1%;
+}
+
+.cards {
+  padding: 5px 10px;
+  flex-direction: column;
+  border: 1px solid rgb(172, 169, 169);
+  border-radius: 5px;
+  margin: 10px;
+  width: 8%;
+  overflow: hidden;
+  display: inline-block;
+  width: 200px;
+}
+
+.sparkline {
+  margin: 10px auto;
+  width: max-content;
+}
+
+.cards-name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: Inter;
+  margin: 0 10px;
+}
+
+.cards-price {
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+.tradingview-widget-container {
+  overflow: hidden;
+}
+
+.chart {
+  margin-top: 15px;
+  width: 100%;
+  height: 60vh;
+}
+
+.chart-name {
+  color: #000;
+  font-family: Inter;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.trending-cards {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 800px) {
+  .coin-container {
+    width: 80%;
+  }
+  .coin-name {
+    font-size: small;
+  }
+
+  .coin-val {
+    gap: 7.5px;
+  }
+
+  .usd {
+    font-size: 22px;
+  }
+
+  .container2 {
+    background-color: white;
+    margin-top: 5%;
+  }
+
+  .trendingcards h1 {
+    font-size: 25px;
+    margin-left: 2%;
+  }
+
+  .blue-container {
+    min-width: 250px;
+    max-width: 780px;
+    width: 150%;
+    margin: 5%;
+  }
+}
