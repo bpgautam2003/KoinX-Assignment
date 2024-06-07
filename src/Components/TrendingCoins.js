@@ -48,7 +48,7 @@ const TrendingCoins = () => {
           {tCoins.map((coin, index) => (
             <div className="cards" key={index}>
               <div className="cards-name">
-                <img src={coin.item.thumb} alt={coin.item.name} />
+                <img src={coin.item.thumb} alt={coin.item.name} className="coin-logo" />
                 <p>{coin.item.symbol}</p>
                 <div
                   className={
@@ -64,7 +64,8 @@ const TrendingCoins = () => {
                 </div>
               </div>
               <div className="cards-price">
-                <h2>{coin.item.data.price}</h2>
+                <h2>{Math.round(coin.item.data.price * 100000) /
+                  100000}</h2>
               </div>
               <div className="sparkline">
                 <img src={coin.item.sparkline} alt="Sparkline" />

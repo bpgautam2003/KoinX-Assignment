@@ -37,6 +37,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .container2 {
     display: none;
   }
@@ -53,6 +54,7 @@ body {
   object-fit: contain;
   cursor: pointer;
 }
+
 .crypto-taxes,
 .free-tools,
 .resource-center {
@@ -62,6 +64,7 @@ body {
   white-space: nowrap;
   cursor: pointer;
 }
+
 .header-element {
   flex: 1;
   display: flex;
@@ -70,10 +73,12 @@ body {
   justify-content: flex-start;
   padding: 0 13px 0 0;
 }
+
 .label-span {
   height: 40px;
   flex: 0.7724;
 }
+
 .crypto-taxes-parent {
   width: 554px;
   display: flex;
@@ -88,6 +93,7 @@ body {
   height: 24px;
   display: none;
 }
+
 .navigation-link {
   align-self: stretch;
   background-color: #fff;
@@ -108,10 +114,12 @@ body {
   font-family: Inter;
   align-items: center;
 }
+
 @media screen and (max-width: 800px) {
   .crypto-taxes-parent {
     display: none;
   }
+
   .menu {
     display: flex;
   }
@@ -222,6 +230,11 @@ body {
 
 /* Coin CSS*/
 
+.coin-logo {
+  width: 35px;
+  height: 35px;
+}
+
 .coin-container {
   background-color: white;
   border-radius: 15px;
@@ -246,6 +259,7 @@ body {
   padding: 7.5px;
   border-radius: 5px;
 }
+
 .coin-info {
   display: flex;
   align-items: center;
@@ -379,6 +393,7 @@ body {
   .coin-container {
     width: 80%;
   }
+
   .coin-name {
     font-size: small;
   }

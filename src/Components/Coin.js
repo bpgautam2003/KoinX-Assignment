@@ -22,7 +22,7 @@ const Coin = () => {
         <div className="coin-container">
           <div className="coin-name">
             <div className="coin-info">
-              <img src={btc} alt=" " />
+              <img src={btc} alt=" " className="coin-logo" />
               <h1>Bitcoin</h1>
               <p>BTC</p>
             </div>

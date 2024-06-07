@@ -27,7 +27,7 @@ const Trending = () => {
       {trendingCoins.map((coin) => (
         <div className="trending-coins">
           <div className="coins-name">
-            <img src={coin.item.thumb} alt={coin.item.name} />
+            <img src={coin.item.thumb} alt={coin.item.name} className="coin-logo" />
             <h3>{coin.item.name}</h3>
           </div>
           <div
@@ -38,8 +38,8 @@ const Trending = () => {
             }
           >
             {coin.item.data.price_change_percentage_24h.inr < 0
-              ? <ArrowDropDownIcon/>
-              : <ArrowDropUpIcon/>}
+              ? <ArrowDropDownIcon />
+              : <ArrowDropUpIcon />}
             {Math.round(coin.item.data.price_change_percentage_24h.inr * 100) /
               100}
             %
